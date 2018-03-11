@@ -1,0 +1,29 @@
+{
+  "name": "meddle",
+  "version": "0.0.5",
+  "description": "Enables attachment of middleware to frameworks and libraries",
+  "author": "Joseph Dalrymple <me@swivel.in>",
+  "license": "AGPLv3",
+  "main": "./lib/index.js",
+  "scripts": {
+    "all": "yarn && yarn build && yarn start",
+    "clean": "rm -rf lib/ node_modules/",
+    "build-run": "yarn build && yarn start",
+    "build": "babel src -d lib",
+    "test": "eslint src",
+    "prepublish": "yarn build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1"
+  }
+}
